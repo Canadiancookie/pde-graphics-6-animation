@@ -1,6 +1,14 @@
+/*
+ * Graphics Assignment 6
+ * by Brayden S.
+ * 
+ * Animations
+ * 
+ */
+
 void setup() {
   size(700, 500); // Size of canvas
-  background(100, 10, 100); // Background color as rgb values
+  background(140, 140, 140); // Background color as rgb values
 }
 
 void draw() {
