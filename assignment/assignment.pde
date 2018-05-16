@@ -6,6 +6,7 @@
  * 
  */
 
+//integers for x and y
 int x = 250;
 int y = 250;
 int deltaX = 2;
@@ -17,15 +18,19 @@ void setup() {
 
 void draw() {
   background(255, 255, 255); // Background color as rgb values
-  fill(255,255,255);
   stroke(0,0,0);
   strokeWeight(1.5);
+  
+  //first circle (left/right)
+  fill(255,255,255);
   ellipse(x,250,80,80);
+  
+  //second circle (up/down)
+  fill(0,0,0);
   ellipse(100,y,80,80);
   
+  //making first circle move
   x=x+deltaX;
-  y=y+deltaY;
-  
   if(x == width-40){
     deltaX=-2; 
   }
@@ -33,6 +38,8 @@ void draw() {
     deltaX=2;
   }
   
+  //making second circle move
+  y=y+deltaY;
   if(y >= height-40){
     deltaY=-4; 
   }
